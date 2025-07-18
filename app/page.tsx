@@ -1,102 +1,125 @@
-import Image from "next/image";
 
+import Image from "next/image";
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen p-8 sm:p-20">
+      <header className="text-center space-y-4">
+        <h1 className="text-5xl font-extrabold text-teal-400 drop-shadow-lg">
+          Welcome to Jobify
+        </h1>
+        <p className="text-lg text-gray-300">
+          Your gateway to exploring professional job opportunities and managing your applications seamlessly.
+        </p>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className="grid grid-cols-1 sm:grid-cols-2 gap-16 mt-16">
+        <section className="space-y-6">
+          <h2 className="text-3xl font-semibold text-teal-300">About the Project</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Jobify is designed to connect job seekers with employers in the most efficient way possible. Our platform allows users to:
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-400">
+            <li>Browse job opportunities from top companies.</li>
+            <li>Filter and search for jobs by title, location, and contract type.</li>
+            <li>Track and manage your applications with ease.</li>
+          </ul>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-semibold text-teal-300">Key Features</h2>
+          <ul className="list-disc pl-5 space-y-2 text-gray-400">
+            <li>User-friendly interface for job exploration.</li>
+            <li>Real-time application tracking.</li>
+            <li>Secure authentication and data management.</li>
+            <li>Admin tools for managing job postings and applications.</li>
+          </ul>
+          <Image
+            src="https://i.pinimg.com/236x/79/49/e4/7949e4a1679a715dde1150bf0c2f6987.jpg"
+            alt="Jobify Illustration"
+            width={300}
+            height={300}
+            className="mx-auto"
+          />
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="mt-16 border-t border-gray-700 pt-8">
+        <h3 className="text-2xl font-semibold text-center text-teal-300">Contact Us</h3>
+        <p className="text-center text-gray-400 mt-2">
+          Have any questions or suggestions? Feel free to reach out to us!
+        </p>
+
+        <form className="max-w-xl mx-auto mt-6 space-y-4">
+          <div>
+            <label className="block text-gray-400" htmlFor="name">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-400" htmlFor="email">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-400" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              rows={4}
+              className="w-full p-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="w-full p-3 bg-teal-500 text-white rounded-lg font-semibold hover:bg-teal-600 transition duration-300 ease-in-out"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <div className="mt-8 text-center">
+          <h4 className="text-xl font-semibold text-gray-300">Follow Us</h4>
+          <div className="flex justify-center gap-6 mt-4">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-500 transition duration-300"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-500 transition duration-300"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-500 transition duration-300"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
